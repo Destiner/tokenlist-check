@@ -68,7 +68,7 @@ async function checkDecimals(list: Tokenlist) {
 }
 
 async function fetchCalls<T>(allCalls: Call[], defaultValue: T) {
-	const limit = 10;
+	const limit = 50;
 
 	const ethcallProvider = new Provider();
 	await ethcallProvider.init(provider);
